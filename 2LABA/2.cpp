@@ -8,7 +8,7 @@ int main(){
 
     int size;
 
-    cout << "Введите размер массива: "; if (!(cin >> size) || size <= 0){cout << "Ошибка, задан не размер"; return 1;}
+    cout << "Введите размер массива: "; if (!(cin >> size) || size <= 0){cout << "Ошибка, задан не размер!"; return 1;}
 
     int arr[size] = {};
 
@@ -31,7 +31,7 @@ int main(){
     cout << "Введите число, которое нужно найти: "; if (!(cin >> num)){cout << "Ошибка, введено не число!"; return 1;}
 
     while (left <= right){
-        
+
     int mid = (left + right)/2, arrNum = arr[mid];
 
     if (num == arrNum){cout << "Индекс числа в массиве: " << mid; isTrue = true; break;}

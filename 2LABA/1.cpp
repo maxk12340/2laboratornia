@@ -8,7 +8,7 @@ int main(){
 
     int size;
 
-    cout << "Введите размер массива: "; if (!(cin >> size) || size <= 0){cout << "Ошибка, задан не размер"; return 1;}
+    cout << "Введите размер массива: "; if (!(cin >> size) || size <= 0){cout << "Ошибка, задан не размер!"; return 1;}
 
     int arr[size] = {};
 
@@ -21,7 +21,7 @@ int main(){
             if (arr[j] > arr[j+1]){int temp = arr[j]; arr[j] = arr[j+1]; arr[j+1] = temp;} 
         }
     }
-    
+
     cout << "Отсортированный массив: "; for (int i = 0; i < size; i++){cout << arr[i] << " ";}
     
     return 0; 
